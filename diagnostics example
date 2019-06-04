@@ -1,0 +1,113 @@
+
+/*
+header: 
+  seq: 7226
+  stamp: 
+    secs: 1549973072
+    nsecs: 693197588
+  frame_id: ''
+status: 
+  - 
+    level: 0
+    name: "husky_node: system_status"
+    message: "System Status OK; Voltage OK; Temperature OK"
+    hardware_id: "Husky A200-166"
+    values: 
+      - 
+        key: "Uptime"
+        value: "7249836"
+      - 
+        key: "Battery Voltage"
+        value: "24.64"
+      - 
+        key: "Left Motor Driver Voltage"
+        value: "22.58"
+      - 
+        key: "Right Motor Driver Voltage"
+        value: "22.59"
+      - 
+        key: "MCU and User Port Current"
+        value: "2.66"
+      - 
+        key: "Left Motor Driver Current"
+        value: "0.63"
+      - 
+        key: "Right Motor Driver Current"
+        value: "0.59"
+      - 
+        key: "Left Motor Driver Temp (C)"
+        value: "27.69"
+      - 
+        key: "Right Motor Driver Temp (C)"
+        value: "25.01"
+      - 
+        key: "Left Motor Temp (C)"
+        value: "16.51"
+      - 
+        key: "Right Motor Temp (C)"
+        value: "18.2"
+  - 
+    level: 0
+    name: "husky_node: power_status"
+    message: "Power System OK; Charge OK"
+    hardware_id: "Husky A200-166"
+    values: 
+      - 
+        key: "Charge (%)"
+        value: "0.37"
+      - 
+        key: "Battery Capacity (Wh)"
+        value: "480"
+  - 
+    level: 0
+    name: "husky_node: safety_status"
+    message: "Safety System OK"
+    hardware_id: "Husky A200-166"
+    values: 
+      - 
+        key: "Timeout"
+        value: "False"
+      - 
+        key: "Lockout"
+        value: "False"
+      - 
+        key: "Emergency Stop"
+        value: "False"
+      - 
+        key: "ROS Pause"
+        value: "False"
+      - 
+        key: "No battery"
+        value: "False"
+      - 
+        key: "Current limit"
+        value: "False"
+  - 
+    level: 0
+    name: "husky_node: software_status"
+    message: "Software OK"
+    hardware_id: "Husky A200-166"
+    values: 
+      - 
+        key: "ROS Control Loop Frequency"
+        value: "9.92618"
+*/
+/*
+osama@osama-Inspiron-N5110:~/dual_ws/src/joshua_code/diag_demo/src$ rosmsg show diagnostic_msgs/DiagnosticArray 
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+diagnostic_msgs/DiagnosticStatus[] status
+  byte OK=0
+  byte WARN=1
+  byte ERROR=2
+  byte STALE=3
+  byte level
+  string name
+  string message
+  string hardware_id
+  diagnostic_msgs/KeyValue[] values
+    string key
+    string value
+*/
